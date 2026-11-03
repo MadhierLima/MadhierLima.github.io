@@ -1,146 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfólio de Madhier Lima, desenvolvedor front-end em formação.">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Space+Grotesk:wght@500;700&display=swap"
+    rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="./css/style.css">
   <script src="./script/script.js" defer></script>
-  <title>Portfólio Tecnológico</title>
+  <title>Portfólio | Madhier Lima</title>
 </head>
-<body>
-  <main>
-    <header>
-      <div class="logo">Madhier Lima Machado</div>
-        <nav class="links">
-          <a href="#sobre">Sobre</a>
-          <a href="#projetos">Projetos</a>
-          <a href="#contato">Contato</a>
-        </nav>
-    </header>
-    <section class="apresentacao">
-      <p>Olá, eu sou</p>
-      <h1>Madhier Lima</h1>
-      <h2>Desenvolvedor Front-end</h2>
-      <p>
-        Estudante de Tecnologia em Análise e Desenvolvimento
-        de Sistemas na UNINOVE, apaixonado por tecnologia
-        e desenvolvimento web.
-      </p>
 
-      <div class="botoes">
-        <a href="#projetos">Ver projetos</a>
-        <a href="https://www.linkedin.com/in/madhierlima/">LinkedIn</a>
-        <a href="https://github.com/MadhierLima">GitHub</a>
-      </div>
-    </section>
-    <section id="sobre" class="sobre">
-      <h2>Sobre Mim</h2>
-        <p>
-          Minha jornada na programação começou antes mesmo da faculdade, quando iniciei meus estudos com o apoio de uma mentoria. Desde então, venho construindo minha base em HTML, CSS e JavaScript, buscando transformar cada novo conhecimento em prática.
+<body>
+  <header class="header">
+    <div class="container header-inner">
+      <a href="#home" class="logo">Madhier <span>.</span></a>
+      <button class="menu-btn" aria-label="Abrir menu" aria-expanded="false">&#9776;</button>
+      <nav aria-label="Menu principal">
+        <ul class="nav-list">
+          <li><a href="#sobre">Sobre</a></li>
+          <li><a href="#projetos">Projetos</a></li>
+          <li><a href="#formacao">Formação</a></li>
+          <li><a href="#contato">Contato</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container">
+        <p class="hero-intro">Olá, sou</p>
+        <h1>Madhier Lima</h1>
+        <p class="hero-cargo">Desenvolvedor Front-End em formação</p>
+        <p class="hero-texto">
+          Estudante de Análise e Desenvolvimento de Sistemas na UNINOVE, em busca de
+          estágio em desenvolvimento front-end.Estudante de Análise e Desenvolvimento de Sistemas na UNINOVE,
+          apaixonado por tecnologia e desenvolvimento web.
         </p>
+        <div class="botoes">
+          <a href="#projetos" class="btn btn-primary">Ver projetos</a>
+          <a href="https://www.linkedin.com/in/madhierlima" target="_blank" rel="noopener noreferrer"
+            class="btn">LinkedIn</a>
+          <a href="https://github.com/MadhierLima" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="sobre" class="section">
+      <div class="container">
+        <h2>Sobre mim</h2>
+        <div class="sobre-texto">
+          <p>
+            Comecei na programação antes de entrar na faculdade, quando procurei um
+            mentor, um desenvolvedor front-end que me orientou sobre por onde começar,
+            quais cursos fazer e em que ordem. Estudei algoritmos, HTML, CSS e JavaScript
+            em cursos em vídeo, aprofundei o JavaScript com a Origamid e fiz o curso de
+            desenvolvimento em JavaScript do SENAI.
+          </p>
+          <p>
+            Durante um ano, tive conversas semanais com ele, por mensagem e pessoalmente.
+            Eu mostrava o que tinha construído, ele apontava melhorias e corrigia meus
+            erros. Também treinei flexbox com exercícios que ele indicou. Essa troca me
+            ensinou a receber feedback e a revisar meu próprio código.
+          </p>
+          <p>
+            Por conta própria, estudo UI/UX design, aprofundo HTML e CSS e aprendi banco
+            de dados com MySQL Workbench. Curso Análise e Desenvolvimento de Sistemas na
+            UNINOVE e busco um estágio em desenvolvimento front-end para colocar em
+            prática o que aprendi e continuar evoluindo junto de uma equipe.
+          </p>
+        </div>
+
+        <h3>Habilidades</h3>
+        <ul class="skills">
+          <li><strong>HTML</strong><span>Estrutura e semântica</span></li>
+          <li><strong>CSS</strong><span>Layouts responsivos</span></li>
+          <li><strong>JavaScript</strong><span>Lógica e interatividade</span></li>
+          <li><strong>MySQL</strong><span>Noções de bancos de dados</span></li>
+          <li><strong>UI/UX</strong><span>Estudando fundamentos de design</span></li>
+          <li><strong>Git e GitHub</strong><span>Versionamento e publicação</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="projetos" class="section section-alt">
+      <div class="container">
+        <h2>Projetos</h2>
+        <div class="projetos">
+          <article class="card">
+            <div class="card-info">
+              <h3>Calculadora</h3>
+              <p>Calculadora feita a partir de uma videoaula e depois reescrita por mim, sem eval, com tratamento de erros, suporte a teclado e histórico da conta.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://madhierlima.github.io/programacao-js/calc.html" target="_blank" rel="noopener noreferrer">Testar online</a>
+                <a href="https://github.com/MadhierLima/programacao-js/blob/main/calc.html" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-info">
+              <h3>Contador</h3>
+              <p>Projeto para praticar lógica de programação e eventos de clique com JavaScript.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://madhierlima.github.io/programacao-js/contador.html" target="_blank"
+                  rel="noopener noreferrer">Testar online</a>
+                <a href="https://github.com/MadhierLima/programacao-js/blob/main/contador.html" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-info">
+              <h3>Validação de formulário</h3>
+              <p>Formulário que valida os dados digitados pelo usuário antes de enviar.</p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://madhierlima.github.io/programacao-js/validacao.html" target="_blank"
+                  rel="noopener noreferrer">Testar online</a>
+                <a href="https://github.com/MadhierLima/programacao-js/blob/main/validacao.html" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card-info">
+              <h3>Atividades JavaScript</h3>
+              <p>Página inicial dos projetos <strong>Calculadora, Contador e Formulário.</strong></p>
+              <ul class="tags">
+                <li>HTML</li>
+                <li>CSS</li>
+              </ul>
+              <div class="card-links">
+                <a href="https://madhierlima.github.io/programacao-js/" target="_blank"
+                    rel="noopener noreferrer">Testar online</a>
+                <a href="https://github.com/MadhierLima/programacao-js/blob/main/validacao.html" target="_blank" rel="noopener noreferrer">Ver código</a>
+              </div>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="formacao" class="section">
+      <div class="container">
+        <h2>Formação e Cursos</h2>
+        <ol class="timeline">
+          <li>
+            <time>2026 - atual</time>
+            <h3>Análise e Desenvolvimento de Sistemas</h3>
+            <p>UNINOVE</p>
+          </li>
+          <li>
+            <time>2026</time>
+            <h3>Excel com IA Generativa</h3>
+            <p>SENAI · Concluído</p>
+          </li>
+          <li>
+            <time>2025 - 2026</time>
+            <h3>Mentoria em desenvolvimento web</h3>
+            <p>Acompanhamento semanal com um desenvolvedor · Concluído</p>
+          </li>
+          <li>
+            <time>2025</time>
+            <h3>Desenvolvimento em JavaScript</h3>
+            <p>SENAI · Concluído</p>
+          </li>
+          <li>
+            <time>2026</time>
+            <h3>HTML, CSS e JavaScript</h3>
+            <p>Origmid - Em andamento</p>
+          </li>
+          <li>
+            <time>2025</time>
+            <h3>Algoritmos, HTML, CSS e JavaScript</h3>
+            <p>Curso em Vídeo · Concluído</p>
+          </li>
+          <li>
+            <time>Em pausa</time>
+            <h3>UI/UX Design, HTML e CSS, e MySQL</h3>
+            <p>Origamid e Curso em Vídeo · Parcialmente concluídos</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="contato" class="section section-alt">
+      <div class="container contato">
+        <h2>Contato</h2>
         <p>
-          Atualmente, estou no 2º semestre de ADS na UNINOVE e continuo evoluindo por meio de estudos, projetos e novos desafios. Meu objetivo é me desenvolver como desenvolvedor Front-end, criando interfaces funcionais, intuitivas e com uma boa experiência para o usuário.
+          Busco estágio em desenvolvimento front-end. Fique à vontade para me chamar!
         </p>
-        <p>
-          Mais do que aprender tecnologias, gosto de entender como as coisas funcionam, resolver problemas e transformar ideias em projetos reais.<br>
-          Estou em busca da minha primeira oportunidade em tecnologia, onde possa aprender com profissionais, colocar meus conhecimentos em prática e continuar construindo minha carreira.
-        </p>
-    </section>
-    <section class="habilidades">
-      <h2>Habilidades</h2>
-      <div class="habilidades-lista">
-        <div class="habilidade">
-          <h3>HTML</h3>
-          <p>Estrutura e semântica de páginas web</p>
-        </div>
-        <div class="habilidade">
-          <h3>CSS</h3>
-          <p>Estilização e layouts responsivos</p>
-        </div>
-        <div class="habilidade">
-          <h3>JavaScript</h3>
-          <p>Lógica e interatividade</p>
-        </div>
-      </div>
-    </section>
-    <section id="projetos" class="projetos">
-      <h2>Projetos</h2>
-      <div class="projetos-lista">
-        <div class="projeto">
-          <img src="./img/multi-resul.PNG" alt="Calculadora desenvolvida com HTML, CSS e JavaScript">
-          <h3>Calculadora</h3>
-          <p>
-            Projeto desenvolvido como atividade acadêmica para praticar
-            conceitos de HTML, CSS e JavaScript na criação de uma
-            calculadora funcional.
-          </p>
-          <div class="tecnologias">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-          <a href="https://github.com/MadhierLima/programacao-js"
-            target="_blank"
-            rel="noopener noreferrer">
-            GitHub</a>
-        </div>
-        <div class="projeto">
-          <img src="./img/contador.PNG" alt="Contador desenvolvido com HTML, CSS e JavaScript">
-          <h3>Contador</h3>
-          <p>
-            Projeto desenvolvido como atividade acadêmica para praticar
-            lógica de programação e interatividade com JavaScript por meio
-            de um contador.
-          </p>
-          <div class="tecnologias">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-          <a href="https://github.com/MadhierLima/programacao-js"
-            target="_blank"
-            rel="noopener noreferrer">
-            GitHub</a>
-        </div>
-        <div class="projeto">
-          <img src="./img/validacao.PNG" alt="Formulário desenvolvido com HTML, CSS e JavaScript">
-          <h3>Validação</h3>
-          <p>
-            Projeto desenvolvido como atividade acadêmica para praticar
-            JavaScript na validação e manipulação de dados inseridos pelo usuário.
-          </p>
-          <div class="tecnologias">
-            <span>HTML</span>
-            <span>CSS</span>
-            <span>JavaScript</span>
-          </div>
-          <a href="https://github.com/MadhierLima/programacao-js"
-            target="_blank"
-            rel="noopener noreferrer">
-            GitHub</a>
-        </div>
-      </div>
-    </section>
-    <section id="formacao" class="formacao">
-      <h2>Formação</h2>
-      <div class="formacao-item">
-        <h3>Tecnologia em Análise e Desenvolvimento de Sistemas</h3>
-        <p>UNINOVE</p>
-        <p>2026 - Atualmente</p>
-      </div>
-    </section>
-    <section id="contato" class="contato">
-      <h2>Contato</h2>
-      <p>
-        Estou aberto a novas oportunidades e desafios na área de tecnologia. <br>
-        Entre em contato comigo através dos links abaixo.
-      </p>
-      <div class="contatos-lista">
-        <a href="https://www.linkedin.com/in/madhierlima/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://github.com/MadhierLima" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="mailto:madhier.machado@gmail.com">E-mail</a>
+        <address class="botoes">
+          <a href="https://github.com/MadhierLima/MadhierLima.github.io/blob/main/cv-madhier-lima-portfolio.pdf" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Ver currículo (PDF)</a>
+          <a href="mailto:madhier.machado@gmail.com" class="btn btn-primary">E-mail</a>
+          <a href="https://www.linkedin.com/in/madhierlima" target="_blank" rel="noopener noreferrer"
+            class="btn">LinkedIn</a>
+          <a href="https://github.com/MadhierLima" target="_blank" rel="noopener noreferrer" class="btn">GitHub</a>
+        </address>
       </div>
     </section>
   </main>
+
+  <footer class="footer">
+    <p>&copy; <span id="ano">2026 </span> Madhier Lima</p>
+  </footer>
+  <button class="voltar-topo" aria-label="Voltar ao topo">&uarr;</button>
 </body>
 </html>
